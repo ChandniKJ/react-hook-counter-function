@@ -18,7 +18,7 @@ function Counter() {
           name="counter"
           type="number"
           value={count}
-          onChange={e => setCount(e.target.value)}
+          onChange={e => setCount(Number(e.target.value))}
         />
       </p>
       <p>The counter is at : {count} </p>
